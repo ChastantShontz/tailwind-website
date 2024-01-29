@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Chastant Shontz">
+    <meta name="description" content="A website built with TailwindCSS">
+    <title>Tailwind Website</title>
+    <link rel="stylesheet" href="public/style.css">
+  </head>
+  <body class="bg-cover bg-center bg-no-repeat h-screen" style="background-image: url(public/img/background.png);">
+    <header>
+      <div class="flex justify-between items-center bg-gradient-to-r from-blue-400 to-blue-600 p-5">
+        <p class="text-white text-2xl" id="title">My Tailwind Website!</p>
+        <div class="hidden md:flex lg:flex justify-between items-center w-2/6 text-white text-xl font-bold" id="rowMenu">
+          <a href="#" class="duration-200 hover:scale-110">Home</a>
+          <a href="#" class="duration-200 hover:scale-110">About</a>
+          <a href="#" class="duration-200 hover:scale-110">Contact</a>
+        </div>
+        <p class="block md:hidden lg:hidden text-white text-xl cursor-pointer select-none" id="hamburger" onclick="menuReveal()">&#9776;</p>
+      </div>
+      <div class="hidden md:hidden lg:hidden bg-gradient-to-r from-blue-400 to-blue-600 text-white text-xl font-bold text-center" id="columnMenu">
+        <a href="#" class="block border-t-4 border-t-blue-900">Home</a>
+        <a href="#" class="block border-t-2 border-t-blue-900">About</a>
+        <a href="#" class="block border-y-2 border-y-blue-900">Contact</a>
+      </div>
+    </header>
+    <article>
+      <p class="mt-10 text-white text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-center" id="text">I built this website with TailwindCSS.  Isn't it lovely?</p>
+    </article>
+    <footer>
+    </footer>
+    <script type="text/javascript" src="public/page.js"></script>
+  </body>
+</html>
